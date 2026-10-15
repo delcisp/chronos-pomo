@@ -1,0 +1,7 @@
+.countdown {
+  font-size: clamp(8rem, 25vw, 16rem); /* ele seta no primeiro valor o valor mínimo, no segundo o valor ideal e no terceiro o valor máximo */
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.3;
+}
+

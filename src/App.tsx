@@ -1,6 +1,8 @@
 import { Container } from './components/Container'
-import { Heading } from './components/Heading'
 import { Logo } from './components/Logo';
+import { Menu } from './components/Menu';
+import { CountDown } from './components/CountDown';
+import { DefaultInput } from './components/DefaultInput';
 import './styles/global.css'
 import './styles/theme.css'
 
@@ -12,9 +14,28 @@ function App() {
       <Logo/>
     </Container>
     <Container>
-      <Heading>Menu </Heading>
+      <Menu/>
     </Container>
-
+    <Container>
+      <CountDown/>
+    </Container>
+    <Container>
+      <form className="form" action="" method="post">
+        <div className="formRow"> 
+          <DefaultInput labelText="Vou trabalhar em" id="task" type="text"/>
+        </div>
+        <div className="formRow"> 
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div className="formRow"> 
+          <p>Ciclos</p>
+          <p>0 0 0 0  0 </p>
+          <div className="formRow"> 
+            <button>Iniciar</button>
+          </div>
+        </div>
+      </form>
+    </Container>
   </>;
 }
 
